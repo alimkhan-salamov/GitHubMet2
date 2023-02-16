@@ -20,9 +20,19 @@ namespace GitHubMet2
     /// </summary>
     public partial class MainWindow : Window
     {
+        int count = 0;
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnIcrement_Click(object sender, RoutedEventArgs e)
+        {
+             count++;
+            lblResultIncrement.Content = count.ToString();
+
+           
         }
     }
 }
